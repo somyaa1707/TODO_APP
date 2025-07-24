@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: todo-app
+    runtime: node
+    repo: https://github.com/somyaa1707/TODO_APP.git
+    buildCommand: npm install
+    startCommand: node index.js
+    branch: main
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        value: your-mongodb-uri
